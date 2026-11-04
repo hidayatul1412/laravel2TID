@@ -83,7 +83,7 @@ class PelangganController extends Controller
      * Remove the specified resource from storage.
      */
     public function destroy(string $id)
-    {
+    {   
         $pelanggan = Pelanggan::findOrFail($id);
         $pelanggan->delete();
 
